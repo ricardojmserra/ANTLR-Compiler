@@ -1,0 +1,13 @@
+line 4:8 error: y is already defined
+line 8:19 error: type intsss is not defined
+line 18:21 error: formal parameter b is defined more than once
+line 23:11 error: f is not a variable
+line 24:11 error: f is not a variable
+line 25:12 error: r is an array
+line 26:12 error: r is a variable, not a function
+line 27:7 error: f is not a variable
+line 28:7 error: r is an array with 2 dimensions, not 4
+line 29:7 error: x is not declared
+line 31:7 error: xpto is not a variable
+Number of parsing errors: 0
+Number of semantic errors: 11

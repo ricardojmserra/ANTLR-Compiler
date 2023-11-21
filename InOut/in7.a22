@@ -1,0 +1,30 @@
+void main() {
+    int i, j;
+    bool b;
+
+    while i < 5 {
+        i = 2;
+    }
+
+    while "ola" {         // error: '"ola"' is not of type bool
+        i = 2;
+    }
+
+    if 5 then i = 4;      // error: '5' is not of type bool
+         else i = 3;
+
+    if 5 < i then i = 4;
+             else i = 3;
+
+    for i = 10 downto 1 step 2
+       write(i);
+
+    for i = 10 downto 3.14 step 2   // error: '3.14' is not of type int
+       write(i);
+
+    for b = 10 downto 1 step 2      // error: b is not of type int
+       write(i);
+
+    for i = j+1 to j*(j+1) step j
+       write(i);
+}

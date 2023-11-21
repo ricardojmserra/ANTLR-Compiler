@@ -1,0 +1,35 @@
+   int i;
+   int y, z;
+
+   void y() {}                      // error: y is already defined
+
+   int f() { return 0; }
+
+   int xpto(int x, intsss y) {      // error: type intsss is not defined
+       return x;
+   }
+
+   void main() {
+       int a[10];
+       int x;
+       x = a[a[1]];
+   }
+
+   int g(int b, bool b) {        // error: formal parameter b is defined more than once
+       real r[100][3];
+       real r2;
+       int z;
+
+       z = f;                    // error: f is not a variable
+       z = f[0];                 // error: f is not a variable
+       r2 = r;                   // error: r is an array
+       r2 = r(5);                // error: r is a variable, not a function
+       f = 3;                    // error: f is not a variable
+       r[0][i][9+2][8] = 99;     // error: r is an array with 2 dimensions, not 4
+       x[2] = 3;                 // error: x is not declared
+       r2 = r[0][2];
+       xpto[7] = 32;             // error: xpto is not a variable
+       return 0;
+   }
+
+

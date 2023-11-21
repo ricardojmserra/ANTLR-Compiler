@@ -1,0 +1,24 @@
+line 10:17 error: operator + is invalid between string and int
+line 11:17 error: operator - is invalid between string and int
+line 12:17 error: operator * is invalid between string and int
+line 13:12 error: operator + is invalid between int and string
+line 14:12 error: operator + is invalid between int and bool
+line 15:15 error: operator + is invalid between bool and bool
+line 17:8 error: cannot assign string to int
+line 18:21 error: operator - is invalid between string and string
+line 21:15 error: operator + is invalid between real and string
+line 23:8 error: cannot assign real to int
+line 28:12 error: operator % is invalid between int and real
+line 30:14 error: operator % is invalid between real and int
+line 31:16 error: operator % is invalid between string and int
+line 34:9 error: unary operator - is invalid for bool
+line 35:9 error: unary operator - is invalid for string
+line 38:12 error: boolean operator 'not' is invalid for int
+line 41:12 error: operator < is invalid between int and string
+line 42:16 error: operator < is invalid between string and string
+line 46:16 error: operator == is invalid between bool and int
+line 49:14 error: operator 'and' is invalid between int and bool
+line 51:13 error: operator 'or' is invalid between int and bool
+line 52:22 error: operator 'or' is invalid between string and string
+Number of parsing errors: 0
+Number of semantic errors: 22

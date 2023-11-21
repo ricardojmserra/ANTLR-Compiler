@@ -1,0 +1,9 @@
+line 19:13 error: cannot assign bool to int
+line 20:9 error: zzz is not a member of ponto
+line 23:6 error: 'true and false' is not of type int
+line 32:9 error: zzz is not a member of ponto
+line 42:18 error: abc is not a member of ponto
+line 46:17 error: p is an array with 1 dimensions, not 3
+line 47:22 error: abc is not a member of ponto
+Number of parsing errors: 0
+Number of semantic errors: 7

@@ -1,0 +1,81 @@
+bool bFunc(int x) {
+   real r;
+   return true;
+}
+
+bool bFunc2(int x) {
+   return 5.4;            // error: bFunc2 should return a value of type bool, not real
+}
+
+int iFunc(int x) {
+   return x;
+}
+
+int iFunc2(int x, real ^r) {
+   return 2;
+}
+
+int iFunc3(int x) {
+   return;                // error: missing return value
+}
+
+int iFunc4(int x) {
+   return 3.14;          // error: iFunc4 should return a value of type int, not real
+}
+
+real rFunc(int x) {
+   return 3;
+}
+
+real rFunc2(int x) {
+   return 3.14;
+}
+
+void vFunc() {
+}
+
+void vFunc2() {
+   return;
+}
+
+void vFunc3() {
+   return 5;           // error: vFunc3 does not return a value
+}
+
+void main() {
+    int i, j;
+    bool b;
+    real r;
+    string s;
+    int A[10];
+    int B[10][10];
+
+    i = abc + 5;               // error: abc is not declared
+    i = xpto() + 5;            // error: xpto is not declared
+    i = bFunc(1) + 2;          // error: operator + is invalid between bool and int
+    b = bFunc(1,2,3);          // error: bFunc has 1 arguments, not 3
+    i = iFunc(1) + 2;
+
+    i = A;                     // error: A is an array
+    i = A[j];
+    i = A[j+2];
+    i = A[3.14];               // error: '3.14' is not of type int
+    i = A[true];               // error: 'true' is not of type int
+    i = B[0][j];
+    i = B[0][j][8];            // error: B is an array with 2 dimensions, not 3
+    i = B[0][j+0.5];           // error: 'j+0.5' is not of type int
+    i = B[0][j<4];             // error: 'j<4' is not of type int
+    i = B[0][j];
+
+    vFunc();
+    vFunc = 6;                       // error: vFunc is not a variable
+    iFunc = 6;                       // error: iFunc is not a variable
+    i = iFunc(i);
+    i = iFunc(b);                    // error: actual parameter 'b' is not of type int
+    i = iFunc(b or not b);           // error: actual parameter 'b or not b' is not of type int
+    i = iFunc(i,i,i) + 45;           // error: iFunc has 1 arguments, not 3
+    i = iFunc2(i,4);                 // error: actual parameter '4' is not a variable
+    i = iFunc2(i,4+r);               // error: actual parameter '4+r' is not a variable
+    i = iFunc2(i,r);
+    i = iFunc2(i,r+2.5);             // error: actual parameter 'r+2.5' is not a variable
+}

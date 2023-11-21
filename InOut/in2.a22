@@ -1,0 +1,72 @@
+int iFunc(int x) {
+   return x;
+}
+
+void vFunc() {
+}
+
+void vFunc2() {
+   return;
+}
+
+int xpto(int y) {
+   int x;
+   x = x + 1;
+   if x > 4  then
+      return x;
+}                      // error: missing return in function xpto
+
+int xpto2(int y) {
+   int x;
+   x = x + 1;
+   if x > 4  then
+      return x;
+   else
+      return 5;
+}
+
+int xpto3(int y) {
+   int x;
+   x = x + 1;
+   if x > 4  then
+      return x;
+   return x;
+}
+
+int xpto4(int y) {
+   int x;
+   x = x + 1;
+   if x > 4  then {
+      x = x + 1;
+      if x > 2 then
+          return x;
+      else {
+          x = x + 1;
+          y = y + x;
+      }
+   }
+   else
+      return 5;
+}                           // error: missing return in function xpto4
+
+int xpto5() {
+}                           // error: missing return in function xpto5
+
+int xpto6() {
+   ;;;
+}                           // error: missing return in function xpto6
+
+int xpto7() {
+   int x;
+   while x < 0 {
+       int y;
+       y = 4;
+       if x == -y then
+           return x;
+       else
+           return y;
+   }
+}                           // error: missing return in function xpto7
+
+void main() {
+}

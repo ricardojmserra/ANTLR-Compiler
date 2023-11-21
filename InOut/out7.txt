@@ -1,0 +1,6 @@
+line 9:10 error: '"ola"' is not of type bool
+line 13:7 error: '5' is not of type bool
+line 22:22 error: '3.14' is not of type int
+line 25:8 error: 'b' is not of type int
+Number of parsing errors: 0
+Number of semantic errors: 4

@@ -1,0 +1,19 @@
+line 29:5 error: int is not a struct type
+line 31:5 error: z is not a member of ponto
+line 32:5 error: z is not a member of ponto
+line 33:7 error: int is not a struct type
+line 34:3 error: p is not an array
+line 35:3 error: d is not declared
+line 36:3 error: f is not a variable
+line 37:3 error: t is not an array
+line 43:9 error: a is not an array
+line 44:13 error: int is not a struct type
+line 45:9 error: z is not a member of triangulo
+line 46:7 error: t is not an array
+line 47:7 error: tA is an array
+line 48:7 error: tA is an array with 2 dimensions, not 1
+line 66:11 error: p is an array with 1 dimensions, not 2
+line 67:11 error: p is an array
+line 68:11 error: ppp is not a member of poligono
+Number of parsing errors: 0
+Number of semantic errors: 17

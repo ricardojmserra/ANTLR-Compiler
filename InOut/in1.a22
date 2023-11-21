@@ -1,0 +1,21 @@
+type ponto {
+   int x, y;
+}
+
+void main() {
+   int x,y;
+   ponto p;
+   h = 3;
+   writeln(x);
+   writeln(p);        // error: actual parameter 'p' does not have a primitive type
+   writeln(x,y,5);    // error: writeln has 1 arguments, not 3
+   write(y);
+   write(10);
+   write();           // error: write has 1 arguments, not 0
+   read(x);
+   read(x,y);         // error: read has 1 arguments, not 2
+   read(5);           // error: actual parameter '5' is not a variable
+   read("ola");       // error: actual parameter ''"ola"' is not a variable
+   write("ola");
+   write("hello " + "world!");
+}

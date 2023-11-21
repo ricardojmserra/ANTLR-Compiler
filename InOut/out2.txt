@@ -1,0 +1,7 @@
+line 17:0 error: missing return in function xpto
+line 50:0 error: missing return in function xpto4
+line 53:0 error: missing return in function xpto5
+line 57:0 error: missing return in function xpto6
+line 69:0 error: missing return in function xpto7
+Number of parsing errors: 0
+Number of semantic errors: 5

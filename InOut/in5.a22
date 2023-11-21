@@ -1,0 +1,54 @@
+void main() {
+    int i, j;
+    bool b;
+    real r;
+    string s;
+
+    i = 5;
+    r = 3.14;
+    r = 3.14 - 2;
+    i = "lobo" + 3;             // error: operator + is invalid between string and int
+    i = "lobo" - 3;             // error: operator - is invalid between string and int
+    i = "lobo" * 3;             // error: operator * is invalid between string and int
+    i = 9 + "fernando" + 1;     // error: operator + is invalid between int and string
+    i = 3 + true;               // error: operator + is invalid between int and bool
+    i = true + false;           // error: operator + is invalid between bool and bool
+    s = "fernando" + "lobo";
+    i = "fernando" + "lobo";    // error: cannot assign string to int
+    i = "fernando" - "lobo";    // error: operator - is invalid between string and string
+    b = false;
+    s = "ola";
+    s = 3.14 + s;               // error: operator + is invalid between real and string
+    r = 4 * 5.7;
+    i = r * 4;                  // error: cannot assign real to int
+    i = i * 4;
+    i = i * j / 3;
+    r = 4 / 2.5;
+    r = 2.5 / 4;
+    i = 5 % 3.12;               // error: operator % is invalid between int and real
+    i = 5 % j;
+    i = 2.0 % 3;                // error: operator % is invalid between real and int
+    i = "ola" % 4;              // error: operator % is invalid between string and int
+    i = (i+2) % 4;
+    i = -6;
+    b = -false;                 // error: unary operator - is invalid for bool
+    s = -"ola";                 // error: unary operator - is invalid for string
+    b = not true;
+    b = not not true;
+    b = not 5;                  // error: boolean operator 'not' is invalid for int
+    b = 4 < 3.1415;
+    b = 4.5 >= 2;
+    b = 4 < s;                  // error: operator < is invalid between int and string
+    b = "ola" < s;              // error: operator < is invalid between string and string
+    b = 56 == 33;
+    b = 56 == 33.2;
+    b = true == false;
+    b = true == 4;              // error: operator == is invalid between bool and int
+    b = "fernando" != "lobo";
+    b = true and false;
+    b = 3 and true;             // error: operator 'and' is invalid between int and bool
+    b = true or false;
+    b = 3 or true;              // error: operator 'or' is invalid between int and bool
+    b = "fernando" or "lobo";   // error: operator 'or' is invalid between string and string
+    b = (i < 5) and not false;
+}

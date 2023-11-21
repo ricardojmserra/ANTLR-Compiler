@@ -1,0 +1,50 @@
+type ponto {
+   int x, y;
+}
+
+type triangulo {
+   ponto a,b,c;
+}
+
+type poligono {
+   ponto p[10];
+   int nPontos;
+}
+
+void main()
+{
+   int i,j;
+   ponto pA[10];
+   pA[0].x = 2;
+   pA[0].x = false;            // error: cannot assign bool to int
+   pA[0].zzz = 2;              // error: zzz is not a member of ponto
+   pA[i].x = 2;
+   pA[i+1].x = 2;
+   pA[true and false].x = 2;   // error: 'true and false' is not of type int
+   pA[ pA[0].x ].y = 2;
+
+   triangulo t;
+   t.a.x = 4;
+   {
+       ponto p;
+       p.x = 0;
+       p.y = 0;
+       p.zzz = 0;              // error: zzz is not a member of ponto
+
+       int x;
+       x = 0;
+       {
+           poligono p, pA[5];
+           p.nPontos = 3;
+           p.p[x].y = 2;
+           p.p[0].x = 2;
+           p.p[j].y = 2;
+           p.p[j].abc = 2;           // error: abc is not a member of ponto
+           pA[2].p[0].x = 0;
+           pA[2].p[x].x = 0;
+           pA[2].p[1+x].x = 0;
+           pA[2].p[0][1][2].x = 0;   // error: p is an array with 1 dimensions, not 3
+           pA[2].p[0].abc = 0;       // error: abc is not a member of ponto
+       }
+   }
+}

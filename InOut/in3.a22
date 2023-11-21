@@ -1,0 +1,30 @@
+   type ponto {
+      int x, y;
+   }
+
+   real r;
+   bool b;
+   int i, j, k, soma;
+   string s;
+   triangulo t;          // error: type triangulo is not defined
+
+   void xpto(int p1, real p2) {
+       bool b1, b2, b3;
+       {
+          int i1;
+          int i2, i3;
+          i2 = 2;
+       }
+       {
+          int i4;
+          i4 = 4;
+          j = 8;
+          i2 = 2;       // error: i2 is not declared
+       }
+       j = 3;
+       xpto(2);         // error: xpto has 2 arguments, not 1
+       zebra();         // error: zebra is not declared
+       soma();          // error: soma is a variable, not a function
+       j = ponto;       // error: ponto is not a variable
+       i2 = 3;          // error: i2 is not declared
+   }                    // error: function main() is not defined

@@ -1,0 +1,76 @@
+type ponto {
+   int x, y;
+}
+
+type triangulo {
+   ponto a,b,c;
+}
+
+type poligono {
+   ponto p[10];
+   int nPontos;
+}
+
+type pessoa {
+   string nome;
+   bool solteiro;
+}
+
+int f( int x, int y ) {
+   return x+y;
+}
+
+void main()
+{
+   int z;
+   int t;
+   ponto p;
+
+   z.x = 0;    // error: int is not a struct type
+   p.x = 3;
+   p.z = 5;    // error: z is not a member of ponto
+   p.z.a = 6;  // error: z is not a member of ponto
+   p.x.x = 6;  // error: int is not a struct type
+   p[4].x = 0; // error: p is not an array 
+   d.x = 0;    // error: d is not declared
+   f.x = 0;    // error: f is not a variable
+   t[5] = 0;   // error: t is not an array
+   {
+       int z;
+       z = 1;
+       triangulo t, tA[4][5];
+       t.a.x = z;
+       t.a[2].x = z;   // error: a is not an array
+       t.a.x.x = z;    // error: int is not a struct type
+       t.z.x = 8;      // error: z is not a member of triangulo
+       t[2].a.x = z;   // error: t is not an array
+       tA.a.x = z;     // error: tA is an array
+       tA[3].a.x = z;  // error: tA is an array with 2 dimensions, not 1
+       tA[3][3].a.x = z; 
+   }
+   {
+       int x;
+       x = 1;
+       ponto p;
+       p.x = 1;
+       {
+          int x;
+          x = 1;
+          t = 2;
+          ponto p;
+          p.x = 2;
+       }
+       poligono pol;
+       pol.nPontos = 5;
+       pol.p[0].x = 0;
+       pol.p[0][0].x = 0;   // error: p is an array with 1 dimensions, not 2
+       pol.p.x = 0;         // error: p is an array
+       pol.ppp.x = 0;       // error: ppp is not a member of poligono
+
+       {
+          pessoa p;
+          if p.solteiro then writeln("Solteiro");
+          else writeln("Casado");
+       }
+   }
+}

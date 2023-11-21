@@ -1,0 +1,10 @@
+line 9:3 error: type triangulo is not defined
+line 22:10 error: i2 is not declared
+line 25:7 error: xpto has 2 arguments, not 1
+line 26:7 error: zebra is not declared
+line 27:7 error: soma is a variable, not a function
+line 28:11 error: ponto is not a variable
+line 29:7 error: i2 is not declared
+line 30:64 error: function main() is not defined
+Number of parsing errors: 0
+Number of semantic errors: 8

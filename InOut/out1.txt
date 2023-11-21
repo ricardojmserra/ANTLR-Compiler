@@ -1,0 +1,8 @@
+line 9:11 error: actual parameter 'p' does not have a primitive type
+line 10:3 error: writeln has 1 arguments, not 3
+line 13:3 error: write has 1 arguments, not 0
+line 15:3 error: read has 1 arguments, not 2
+line 16:8 error: actual parameter '5' is not a variable
+line 17:8 error: actual parameter '"ola"' is not a variable
+Number of parsing errors: 0
+Number of semantic errors: 6

@@ -1,0 +1,24 @@
+line 7:10 error: bFunc2 should return a value of type bool, not real
+line 19:3 error: missing return value
+line 23:10 error: iFunc4 should return a value of type int, not real
+line 42:10 error: vFunc3 does not return a value
+line 53:8 error: abc is not declared
+line 54:8 error: xpto is not declared
+line 55:19 error: operator + is invalid between bool and int
+line 56:8 error: bFunc has 1 arguments, not 3
+line 59:8 error: A is an array
+line 62:10 error: '3.14' is not of type int
+line 63:10 error: 'true' is not of type int
+line 65:8 error: B is an array with 2 dimensions, not 3
+line 66:13 error: 'j+0.5' is not of type int
+line 67:13 error: 'j<4' is not of type int
+line 71:4 error: vFunc is not a variable
+line 72:4 error: iFunc is not a variable
+line 74:14 error: actual parameter 'b' is not of type int
+line 75:14 error: actual parameter 'b or not b' is not of type int
+line 76:8 error: iFunc has 1 arguments, not 3
+line 77:17 error: actual parameter '4' is not a variable
+line 78:17 error: actual parameter '4+r' is not a variable
+line 80:17 error: actual parameter 'r+2.5' is not a variable
+Number of parsing errors: 0
+Number of semantic errors: 22
